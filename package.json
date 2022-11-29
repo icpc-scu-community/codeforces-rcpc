@@ -1,0 +1,35 @@
+{
+  "name": "codeforces-rcpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "lint": "eslint ./src --ext .js,.ts",
+    "lint:fix": "eslint ./src --ext .js,.ts --fix",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "aes-js": "^3.1.2",
+    "got": "^11.8.5"
+  },
+  "devDependencies": {
+    "@types/aes-js": "^3.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
