@@ -5,7 +5,7 @@ Codeforces RCPC is a package that helps you safely get the RCPC value from Codef
 ## Why does this package exist?
 
 Lately, Codeforces has used a popular technique to stop scrapers from reaching Codeforces page.
-The technique is using som form of redirction. This redirection depends on the [**slow** implementation](https://code.google.com/archive/p/slowaes/) of the AES algorithm.
+The technique is using some form of redirction. This redirection depends on the [**slow** implementation](https://code.google.com/archive/p/slowaes/) of the AES algorithm.
 
 ## How to use it?
 
