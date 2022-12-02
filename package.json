@@ -9,6 +9,7 @@
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
+    "prepublish": "tsc",
     "build": "tsc",
     "test": "",
     "lint": "eslint ./src --ext .js,.ts",
