@@ -16,7 +16,8 @@ export abstract class Codeforces {
 
   static async getRCPCValue() {
     const { a, b, c } = await this.getAESParameters();
-    return AES.decrypt(c, a, b);
+    if (a && b && c) return AES.decrypt(c, a, b);
+    throw new Error('Could not get RCPC value! Make sure CodeForces has redirection.');
   }
 
   static async hasRedirection(): Promise<boolean> {
